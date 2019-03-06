@@ -1,0 +1,3691 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/pbrous/ontologies/2017/2/IoTAMDI"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/pbrous/ontologies/2017/2/IoTAMDI">
+    <Prefix name="" IRI="http://www.semanticweb.org/pbrous/ontologies/2017/2/IoTAMDI"/>
+    <Prefix name="0.1" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="cube" IRI="http://purl.org/linked-data/cube#"/>
+    <Prefix name="org#" IRI="http://www.w3.org/ns/org#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/dc/elements/1.1/</Import>
+    <Import>http://purl.org/linked-data/cube</Import>
+    <Import>http://www.w3.org/ns/org#</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class abbreviatedIRI="cube:Bot"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cube:DataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cube:Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRDerivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRFact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contracting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoordinationMechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DGAlignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DGClarification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DGCompliancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DGOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataArchitectureManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataAudit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataGovernance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataIntegrationAndInteroperabilityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataManagementProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataModellingAndDesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataQualityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSecurityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStrategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataWarehousingAndBusinessIntelligenceManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DocumentAndContentManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainSpecificMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligentProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lineage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetadataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonFunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReferenceAndMasterDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Registration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SelfOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShareholderRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="0.1:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AdaptsToChangeFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Aligns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Analyzes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BRConstrains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BRDefines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BRDerives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BRFactual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BRRelates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BRRequires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Clarifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ConstrainCompute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Constrains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Contracts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Controls"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Coordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Create"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DataOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DataSteward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Decides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Delete"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Designs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Directs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EmergentBehaviorInResponseTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnableCompute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Enables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesCoordinationOfProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesExpectationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesIndustrialAutomation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesInfraUsage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesPerception"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesPerformanceAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesPolicyDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesProcessing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnablesTransmission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Identifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Influences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Instructs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Integrates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsConnectedThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsDynamic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MaintainsDescendency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Measures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Models"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Organizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Perceives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Plans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Presents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Processes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Read"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Registers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Regulates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Secures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Signals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Standardizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Structures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Transmits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Update"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CoordinateReferenceSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GUID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MediaType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberofViews"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Reviewed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SpatialResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SystemID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TemporalReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#digitalOrigin"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="cube:Bot"/>
+        <Class IRI="#Application"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DGClarification"/>
+        <Class IRI="#Metadata"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="cube:Bot"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cube:DataModel"/>
+        <Class IRI="#DGClarification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cube:Robot"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Algorithm"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRConstraint"/>
+        <Class IRI="#BusinessRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRDefinition"/>
+        <Class IRI="#BusinessRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRDerivation"/>
+        <Class IRI="#BusinessRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRFact"/>
+        <Class IRI="#BusinessRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRRelationship"/>
+        <Class IRI="#BusinessRule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRequirement"/>
+        <Class IRI="#DGAlignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRule"/>
+        <Class IRI="#DGAlignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contracting"/>
+        <Class IRI="#CoordinationMechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoordinationMechanism"/>
+        <Class IRI="#DGOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DGAlignment"/>
+        <Class IRI="#DataGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DGClarification"/>
+        <Class IRI="#DataGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DGCompliancy"/>
+        <Class IRI="#DataGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DGOrganization"/>
+        <Class IRI="#DataGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataArchitectureManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataAudit"/>
+        <Class IRI="#DGCompliancy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataIntegrationAndInteroperabilityManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataManagementProcess"/>
+        <Class IRI="#DGOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataModellingAndDesign"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataPolicy"/>
+        <Class IRI="#DGCompliancy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataQualityManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSecurityManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStrategy"/>
+        <Class IRI="#DGCompliancy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataWarehousingAndBusinessIntelligenceManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Description"/>
+        <Class IRI="#Registration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DocumentAndContentManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainIndependentMetadata"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainSpecificMetadata"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#CoordinationMechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionalRequirement"/>
+        <Class IRI="#SystemRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identification"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligentProcessing"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lineage"/>
+        <Class IRI="#DGClarification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <Class IRI="#Registration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metadata"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetadataManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonFunctionalRequirement"/>
+        <Class IRI="#SystemRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalMetadata"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planning"/>
+        <Class IRI="#CoordinationMechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Platform"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReferenceAndMasterDataManagement"/>
+        <Class IRI="#DataManagementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Registration"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SelfOrganization"/>
+        <Class IRI="#CoordinationMechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderRequirement"/>
+        <Class IRI="#BusinessRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standard"/>
+        <Class IRI="#DGClarification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemRequirement"/>
+        <Class IRI="#BusinessRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technology"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transmission"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserMetadata"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="0.1:Agent"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="0.1:Person"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DataArchitectureManagement"/>
+        <Class IRI="#DataIntegrationAndInteroperabilityManagement"/>
+        <Class IRI="#DataModellingAndDesign"/>
+        <Class IRI="#DataQualityManagement"/>
+        <Class IRI="#DataSecurityManagement"/>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+        <Class IRI="#DataWarehousingAndBusinessIntelligenceManagement"/>
+        <Class IRI="#DocumentAndContentManagement"/>
+        <Class IRI="#MetadataManagement"/>
+        <Class IRI="#ReferenceAndMasterDataManagement"/>
+    </DisjointClasses>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Clarifies"/>
+        <ObjectProperty IRI="#Describes"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BRConstrains"/>
+        <ObjectProperty IRI="#Aligns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BRDefines"/>
+        <ObjectProperty IRI="#Aligns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BRDerives"/>
+        <ObjectProperty IRI="#Aligns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BRFactual"/>
+        <ObjectProperty IRI="#Aligns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BRRelates"/>
+        <ObjectProperty IRI="#Aligns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BRRequires"/>
+        <ObjectProperty IRI="#Aligns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ConstrainCompute"/>
+        <ObjectProperty IRI="#Constrains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Contracts"/>
+        <ObjectProperty IRI="#Coordinates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Controls"/>
+        <ObjectProperty IRI="#Constrains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Coordinates"/>
+        <ObjectProperty IRI="#Organizes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Create"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DataOwner"/>
+        <ObjectProperty abbreviatedIRI="org#:role"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DataSteward"/>
+        <ObjectProperty abbreviatedIRI="org#:role"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Delete"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Designs"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Directs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnableCompute"/>
+        <ObjectProperty IRI="#Enables"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesCoordinationOfProcesses"/>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesExpectationManagement"/>
+        <ObjectProperty IRI="#Enables"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesIndustrialAutomation"/>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesInfraUsage"/>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+        <ObjectProperty IRI="#Enables"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesPerception"/>
+        <ObjectProperty IRI="#EnablesDataManagement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesPerformanceAnalysis"/>
+        <ObjectProperty IRI="#Enables"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesPolicyDevelopment"/>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesProcessing"/>
+        <ObjectProperty IRI="#EnablesDataManagement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EnablesTransmission"/>
+        <ObjectProperty IRI="#EnablesDataManagement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Integrates"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MaintainsDescendency"/>
+        <ObjectProperty IRI="#Clarifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Models"/>
+        <ObjectProperty IRI="#Clarifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Plans"/>
+        <ObjectProperty IRI="#Coordinates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Presents"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Read"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Regulates"/>
+        <ObjectProperty IRI="#Constrains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Secures"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Signals"/>
+        <ObjectProperty IRI="#Coordinates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Standardizes"/>
+        <ObjectProperty IRI="#Clarifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Store"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Structures"/>
+        <ObjectProperty IRI="#Organizes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Update"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="org#:role"/>
+        <ObjectProperty IRI="#Organizes"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#AdaptsToChangeFrom"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Aligns"/>
+        <Class IRI="#DGAlignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Analyzes"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Analyzes"/>
+        <Class IRI="#DataWarehousingAndBusinessIntelligenceManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Analyzes"/>
+        <Class IRI="#MetadataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BRConstrains"/>
+        <Class IRI="#BRConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BRDefines"/>
+        <Class IRI="#BRDefinition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BRDerives"/>
+        <Class IRI="#BRDerivation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BRFactual"/>
+        <Class IRI="#BRFact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BRRelates"/>
+        <Class IRI="#BRRelationship"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BRRequires"/>
+        <Class IRI="#BusinessRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Clarifies"/>
+        <Class IRI="#DGClarification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ConstrainCompute"/>
+        <Class IRI="#Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#BusinessRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#CulturalEnvironment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#DGCompliancy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#PhysicalEnvironment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#PoliticalEnvironment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Contracts"/>
+        <Class IRI="#Contracting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Controls"/>
+        <Class IRI="#DataAudit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Controls"/>
+        <Class IRI="#DataQualityManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Controls"/>
+        <Class IRI="#MetadataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Controls"/>
+        <Class IRI="#ReferenceAndMasterDataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Coordinates"/>
+        <Class IRI="#CoordinationMechanism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Coordinates"/>
+        <Class IRI="#DGOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Create"/>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Create"/>
+        <Class IRI="#MetadataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DataOwner"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DataSteward"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Decides"/>
+        <Class IRI="#IntelligentProcessing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Delete"/>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Describes"/>
+        <Class IRI="#Description"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Describes"/>
+        <Class IRI="#Metadata"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Designs"/>
+        <Class IRI="#DataArchitectureManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Directs"/>
+        <Class IRI="#DataStrategy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EmergentBehaviorInResponseTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnableCompute"/>
+        <Class IRI="#Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesCoordinationOfProcesses"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesCoordinationOfProcesses"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesDataManagement"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesExpectationManagement"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesExpectationManagement"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesExpectationManagement"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesIndustrialAutomation"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesIndustrialAutomation"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesInfraUsage"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesInfraUsage"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesPerception"/>
+        <Class IRI="#Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesPerformanceAnalysis"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesPerformanceAnalysis"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesPolicyDevelopment"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesPolicyDevelopment"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesProcessing"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesProcessing"/>
+        <Class IRI="#Application"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnablesTransmission"/>
+        <Class IRI="#Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Identifies"/>
+        <Class IRI="#Identification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Influences"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Influences"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Influences"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Instructs"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Integrates"/>
+        <Class IRI="#DataIntegrationAndInteroperabilityManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Integrates"/>
+        <Class IRI="#MetadataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsConnectedThrough"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsDynamic"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MaintainsDescendency"/>
+        <Class IRI="#Lineage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Manages"/>
+        <Class IRI="#DataManagementProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Measures"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Models"/>
+        <Class abbreviatedIRI="cube:DataModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Models"/>
+        <Class IRI="#DataModellingAndDesign"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Organizes"/>
+        <Class IRI="#DGOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Organizes"/>
+        <Class IRI="#SelfOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Perceives"/>
+        <Class IRI="#Perception"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Plans"/>
+        <Class IRI="#Planning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Presents"/>
+        <Class IRI="#DataWarehousingAndBusinessIntelligenceManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Processes"/>
+        <Class IRI="#IntelligentProcessing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Read"/>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Registers"/>
+        <Class IRI="#Registration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Regulates"/>
+        <Class IRI="#DataPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Secures"/>
+        <Class IRI="#DataSecurityManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Signals"/>
+        <Class IRI="#Feedback"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Standardizes"/>
+        <Class IRI="#Standard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Store"/>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Store"/>
+        <Class IRI="#DocumentAndContentManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Structures"/>
+        <Class IRI="#DGOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Transmits"/>
+        <Class IRI="#Transmission"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Update"/>
+        <Class IRI="#DataStorageAndOperationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Uses"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="org#:role"/>
+        <Class IRI="#DGOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="0.1:made"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="0.1:maker"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AdaptsToChangeFrom"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AdaptsToChangeFrom"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AdaptsToChangeFrom"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Aligns"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Analyzes"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRConstrains"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRConstrains"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRDefines"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRDefines"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRDerives"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRDerives"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRFactual"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRRelates"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRRelates"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRRequires"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BRRequires"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Clarifies"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Clarifies"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ConstrainCompute"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ConstrainCompute"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Constrains"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Contracts"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Controls"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Controls"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Coordinates"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Create"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DataOwner"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DataSteward"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Decides"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Delete"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Describes"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Describes"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Describes"/>
+        <Class IRI="#Metadata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Describes"/>
+        <Class IRI="#Registration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Describes"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Designs"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Directs"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EmergentBehaviorInResponseTo"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EmergentBehaviorInResponseTo"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EmergentBehaviorInResponseTo"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnableCompute"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Enables"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Enables"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesCoordinationOfProcesses"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesDataManagement"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesExpectationManagement"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesIndustrialAutomation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesInfraUsage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesInfrastructureServiceProcesses"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesPerception"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesPerformanceAnalysis"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesPolicyDevelopment"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesProcessing"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnablesTransmission"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Identifies"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Influences"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Instructs"/>
+        <Class IRI="#Hardware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Integrates"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsConnectedThrough"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsConnectedThrough"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsConnectedThrough"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsDynamic"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsDynamic"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsDynamic"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MaintainsDescendency"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Manages"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Measures"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Models"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Organizes"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Perceives"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Plans"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Presents"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Processes"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Read"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Registers"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Regulates"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Secures"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Signals"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Standardizes"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Store"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Structures"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Transmits"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Update"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Uses"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Uses"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="org#:role"/>
+        <Class abbreviatedIRI="0.1:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="0.1:made"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="0.1:made"/>
+        <Class IRI="#DataGovernance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="0.1:made"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#DataOwner"/>
+        <ObjectProperty IRI="#DataSteward"/>
+    </DisjointObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+        <Class IRI="#PhysicalMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Class IRI="#DomainIndependentMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CoordinateReferenceSystem"/>
+        <Class IRI="#DomainSpecificMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#GUID"/>
+        <Class IRI="#Identification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MediaType"/>
+        <Class IRI="#PhysicalMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberofViews"/>
+        <Class IRI="#UserMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Reviewed"/>
+        <Class IRI="#UserMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SpatialResolution"/>
+        <Class IRI="#DomainSpecificMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SystemID"/>
+        <Class IRI="#Identification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TemporalReference"/>
+        <Class IRI="#DomainSpecificMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#digitalOrigin"/>
+        <Class IRI="#PhysicalMetadata"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CoordinateReferenceSystem"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MediaType"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberofViews"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Reviewed"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SpatialResolution"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TemporalReference"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#digitalOrigin"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cube:Bot</AbbreviatedIRI>
+        <Literal>software applications that run automated tasks over the Internet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cube:Bot</AbbreviatedIRI>
+        <Literal>bot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AbbreviatedIRI>cube:Bot</AbbreviatedIRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cube:DataModel</AbbreviatedIRI>
+        <Literal>an abstract model that organizes elements of data and standardizes how they relate to one another and to properties of the real world entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cube:DataModel</AbbreviatedIRI>
+        <Literal>DataModel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AbbreviatedIRI>cube:DataModel</AbbreviatedIRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cube:Robot</AbbreviatedIRI>
+        <Literal>a machine—especially one programmable by a computer— capable of carrying out a complex series of actions automatically</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cube:Robot</AbbreviatedIRI>
+        <Literal>Robot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AbbreviatedIRI>cube:Robot</AbbreviatedIRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdaptsToChangeFrom</IRI>
+        <Literal>Indicates that the object is capable of adapting to changes occuring in other classes in its range.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AdaptsToChangeFrom</IRI>
+        <Literal>AdaptsToChangeFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#AdaptsToChangeFrom</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>a process or set of rules to be followed in calculations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aligns</IRI>
+        <Literal>indicates that  data meets the necessary requirements to align with the requirements of the business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Aligns</IRI>
+        <Literal>Aligns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Aligns</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Analyzes</IRI>
+        <Literal>Indicates that the object is capable of analyzing data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Analyzes</IRI>
+        <Literal>Analyzes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Analyzes</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Application</IRI>
+        <Literal>An application is any program, or group of programs, that is designed for the end user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Application</IRI>
+        <Literal>Application</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Application</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRConstrains</IRI>
+        <Literal>Indicates that the business rule is a constraint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRConstrains</IRI>
+        <Literal>BRConstrains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRConstrains</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRConstraint</IRI>
+        <Literal>Rules that constrain some aspect of business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRConstraint</IRI>
+        <Literal>BRConstraint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRConstraint</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRDefines</IRI>
+        <Literal>Indicates that the business rule is a definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRDefines</IRI>
+        <Literal>BRDefines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRDefines</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRDefinition</IRI>
+        <Literal>Business rules used to define data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRDefinition</IRI>
+        <Literal>BRDefinition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRDefinition</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRDerivation</IRI>
+        <Literal>Business rules used to derive data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRDerivation</IRI>
+        <Literal>BRDerivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRDerivation</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRDerives</IRI>
+        <Literal>Indicates that the business rule establishes facts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRDerives</IRI>
+        <Literal>BRDerives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRDerives</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRFact</IRI>
+        <Literal>Business rules used to establish facts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRFact</IRI>
+        <Literal>BRFact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRFact</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRFactual</IRI>
+        <Literal>Indicates that the business rule defines a fact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRFactual</IRI>
+        <Literal>BRFactual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRFactual</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRRelates</IRI>
+        <Literal>Indicates that the business rule establishes a relationship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRRelates</IRI>
+        <Literal>BRRelates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRRelates</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRRelationship</IRI>
+        <Literal>Business rules used to define relationships</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRRelationship</IRI>
+        <Literal>BRRelationship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRRelationship</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRRequires</IRI>
+        <Literal>Indicates that requirements for business need to be met</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BRRequires</IRI>
+        <Literal>BRRequires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BRRequires</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessRequirement</IRI>
+        <Literal>specifications which once delivered, provide value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BusinessRequirement</IRI>
+        <Literal>BusinessRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BusinessRequirement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal>Rule that define or constrains some aspect of business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal>BusinessRule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Clarifies</IRI>
+        <Literal>Indicates that the object clarifies the data entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Clarifies</IRI>
+        <Literal>Clarifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Clarifies</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Component</IRI>
+        <Literal>Represents the sum of the components of the AMDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Component</IRI>
+        <Literal>Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConstrainCompute</IRI>
+        <Literal>Indicates that the class constrains computation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConstrainCompute</IRI>
+        <Literal>ConstrainCompute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#ConstrainCompute</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Constrains</IRI>
+        <Literal>Indicates that the object constrains activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Constrains</IRI>
+        <Literal>Constrains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Constrains</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Contracting</IRI>
+        <Literal>A coordination mechanism that divides activities into subtasks that can be performed by specialist agents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contracting</IRI>
+        <Literal>Contracting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Contracting</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Contracts</IRI>
+        <Literal>Indicates that the object is capable of contracting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contracts</IRI>
+        <Literal>Contracts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Contracts</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Controls</IRI>
+        <Literal>Indicates that the object monitors compliancy to norms, policies, laws and regulations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Controls</IRI>
+        <Literal>Controls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Controls</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coordinates</IRI>
+        <Literal>Indicates that the object determines the coordination mechanism used to coordinate interaction with other objects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Coordinates</IRI>
+        <Literal>Coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Coordinates</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CoordinationMechanism</IRI>
+        <Literal>the coordination mechanism(s) used to manage data in an organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CoordinationMechanism</IRI>
+        <Literal>CoordinationMechanism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#CoordinationMechanism</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Create</IRI>
+        <Literal>Indicates that the object is capable of creating data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Create</IRI>
+        <Literal>Create</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Create</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CulturalEnvironment</IRI>
+        <Literal>a set of beliefs, practices, customs and behaviors that are found to be common to all agents operating within the AMDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CulturalEnvironment</IRI>
+        <Literal>CulturalEnvironment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#CulturalEnvironment</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DGAlignment</IRI>
+        <Literal>Artefacts used to align business needs with data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DGAlignment</IRI>
+        <Literal>DGAlignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DGAlignment</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DGClarification</IRI>
+        <Literal>Artefacts used to ensure clarification of Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DGClarification</IRI>
+        <Literal>DGClarification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DGClarification</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DGCompliancy</IRI>
+        <Literal>Objects which ensure compliancy of data to policy, laws and directives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DGCompliancy</IRI>
+        <Literal>DGCompliancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DGCompliancy</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DGOrganization</IRI>
+        <Literal>Artefacts required to ensure organization of data governance in a particular organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DGOrganization</IRI>
+        <Literal>DGOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DGOrganization</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data</IRI>
+        <Literal xml:lang="en">Symbols representing measures or descriptions of objects or events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data</IRI>
+        <Literal xml:lang="en">Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Data</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataArchitectureManagement</IRI>
+        <Literal>Objects used for the design and construction of an integrated data resource that is business driven, based on real-world subjects as perceived by the organization, and implemented into appropriate business environments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataArchitectureManagement</IRI>
+        <Literal>DataArchitectureManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataArchitectureManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataAudit</IRI>
+        <Literal>a formal and official verification of quality and conformance to requirements, regulations, standards and/or guidelines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataAudit</IRI>
+        <Literal>DataAudit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataAudit</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataGovernance</IRI>
+        <Literal>Represents the Schema of the asset management data infrstructure: shared rules which are embodied by norms, values, beliefs, and assumptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataGovernance</IRI>
+        <Literal>DataGovernance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataGovernance</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataIntegrationAndInteroperabilityManagement</IRI>
+        <Literal>Objects that determine how data is selected, transformed and flows across databases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataIntegrationAndInteroperabilityManagement</IRI>
+        <Literal>DataIntegrationAndInteroperabilityManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataIntegrationAndInteroperabilityManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataManagementProcess</IRI>
+        <Literal>the business function that develops and executes plans, policies, practices, and projects that acquire, control, protect, deliver and enhance the value of data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataManagementProcess</IRI>
+        <Literal>DataManagementProcess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataManagementProcess</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataModellingAndDesign</IRI>
+        <Literal>analysis and design method, building data models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataModellingAndDesign</IRI>
+        <Literal>DataModellingAndDesign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataModellingAndDesign</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataPolicy</IRI>
+        <Literal>an organization&apos;s set of data management artefacts designed to assist business administration and protect company assets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataPolicy</IRI>
+        <Literal>DataPolicy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataPolicy</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataQualityManagement</IRI>
+        <Literal>process of ensuring that the development effort will result in the desired product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataQualityManagement</IRI>
+        <Literal>DataQualityManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataQualityManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataSecurityManagement</IRI>
+        <Literal>Objects that prevent unauthorized access to a database and its data, and to applications that have authorized access to databases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataSecurityManagement</IRI>
+        <Literal>DataSecurityManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataSecurityManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataStorageAndOperationsManagement</IRI>
+        <Literal>Objects that provide support from data acquisition to purging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataStorageAndOperationsManagement</IRI>
+        <Literal>DataStorageAndOperationsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataStorageAndOperationsManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataStrategy</IRI>
+        <Literal>a business plan for leveraging and enterprise’s data assets to maximum advantage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataStrategy</IRI>
+        <Literal>DataStrategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataStrategy</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataWarehousingAndBusinessIntelligenceManagement</IRI>
+        <Literal>Operational, administrative and control objects that provide access to Business Intelligence data and support to knowledge workers engaged in reporting, query and analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataWarehousingAndBusinessIntelligenceManagement</IRI>
+        <Literal>DataWarehousingAndBusinessIntelligenceManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DataWarehousingAndBusinessIntelligenceManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Decides</IRI>
+        <Literal>Inidicates that the object is capable of making an intelligent decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Decides</IRI>
+        <Literal>Decides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Decides</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Delete</IRI>
+        <Literal>Indicates that the object is capable of deleting data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Delete</IRI>
+        <Literal>Delete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Delete</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Describes</IRI>
+        <Literal>Indicates that the object describes another object or activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Describes</IRI>
+        <Literal>Describes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Describes</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Description</IRI>
+        <Literal xml:lang="en">Symbols representing descriptions of objects or events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Description</IRI>
+        <Literal xml:lang="en">Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Description</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Designs</IRI>
+        <Literal>Indicates that the object is capable of managing architecture design.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Designs</IRI>
+        <Literal>Designs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Designs</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Directs</IRI>
+        <Literal>Indicates that the property gives direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Directs</IRI>
+        <Literal>Directs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Directs</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DocumentAndContentManagement</IRI>
+        <Literal>managing data found outside of standard structured databases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DocumentAndContentManagement</IRI>
+        <Literal>DocumentAndContentManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DocumentAndContentManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DomainIndependentMetadata</IRI>
+        <Literal xml:lang="en">includes generic descriptions such as the creator or modifier of data as well as authorization and lineage information related to the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomainIndependentMetadata</IRI>
+        <Literal xml:lang="en">DomainIndependentMetadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DomainIndependentMetadata</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DomainSpecificMetadata</IRI>
+        <Literal xml:lang="en">provides a set of mappings from a representation language to agreed-upon concepts in the real world</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomainSpecificMetadata</IRI>
+        <Literal xml:lang="en">DomainSpecificMetadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#DomainSpecificMetadata</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmergentBehaviorInResponseTo</IRI>
+        <Literal>Indicates that this object displays emergent behavior in reponse to changes in other objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmergentBehaviorInResponseTo</IRI>
+        <Literal>EmergentBehaviorInResponseTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EmergentBehaviorInResponseTo</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnableCompute</IRI>
+        <Literal>Indicates that the class enables computation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnableCompute</IRI>
+        <Literal>EnableCompute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnableCompute</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Enables</IRI>
+        <Literal>Indicates that the object is capable of enabling another object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Enables</IRI>
+        <Literal>Enables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Enables</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesCoordinationOfProcesses</IRI>
+        <Literal>Indicates that the object is capable of enabling coordination of processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesCoordinationOfProcesses</IRI>
+        <Literal>EnablesCoordinationOfProcesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesCoordinationOfProcesses</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesDataManagement</IRI>
+        <Literal>Indicates that the object is capable of enabling data management processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesDataManagement</IRI>
+        <Literal>EnablesDataManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesDataManagement</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesExpectationManagement</IRI>
+        <Literal>Indicates that the object is capable of enabling expectation management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesExpectationManagement</IRI>
+        <Literal>EnablesExpectationManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesExpectationManagement</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesIndustrialAutomation</IRI>
+        <Literal>Indicates that the object is capable of enabling industrial automation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesIndustrialAutomation</IRI>
+        <Literal>EnablesIndustrialAutomation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesIndustrialAutomation</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesInfraUsage</IRI>
+        <Literal>Indicates that the object is capable of enabling usage of infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesInfraUsage</IRI>
+        <Literal>EnablesInfraUsage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesInfraUsage</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesInfrastructureServiceProcesses</IRI>
+        <Literal>Indicates that the object is capable of managing connected data resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesInfrastructureServiceProcesses</IRI>
+        <Literal>EnablesInfrastructureServiceProcesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesInfrastructureServiceProcesses</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesPerception</IRI>
+        <Literal>Indicates that the object is capable of enabling perception processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesPerception</IRI>
+        <Literal>EnablesPerception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesPerception</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesPerformanceAnalysis</IRI>
+        <Literal>Indicates that the object is capable of enabling performance analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesPerformanceAnalysis</IRI>
+        <Literal>EnablesPerformanceAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesPerformanceAnalysis</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesPolicyDevelopment</IRI>
+        <Literal>Indicates that the object is capable of enabling policy development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesPolicyDevelopment</IRI>
+        <Literal>EnablesPolicyDevelopment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesPolicyDevelopment</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesProcessing</IRI>
+        <Literal>Indicates that the object is capable of enabling data processing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesProcessing</IRI>
+        <Literal>EnablesProcessing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesProcessing</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnablesTransmission</IRI>
+        <Literal>Indicates that the object is capable of enabling transmission of data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnablesTransmission</IRI>
+        <Literal>EnablesTransmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#EnablesTransmission</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Environment</IRI>
+        <Literal>Represents the total surroundings or conditions in which the AMDI occurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Environment</IRI>
+        <Literal>Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Environment</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Feedback</IRI>
+        <Literal>Enables AMDIs to use its own output to adjust its inputs and processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Feedback</IRI>
+        <Literal>Feedback</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Feedback</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FunctionalRequirement</IRI>
+        <Literal>Clusters of component requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FunctionalRequirement</IRI>
+        <Literal>FunctionalRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#FunctionalRequirement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GUID</IRI>
+        <Literal>Global Unique Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GUID</IRI>
+        <Literal>GUID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#GUID</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hardware</IRI>
+        <Literal xml:lang="en">The physical parts or components of an IT system,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hardware</IRI>
+        <Literal xml:lang="en">Hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Hardware</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Identification</IRI>
+        <Literal xml:lang="en">Symbols used to uniquely identify an object or event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Identification</IRI>
+        <Literal xml:lang="en">Identification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Identification</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Identifies</IRI>
+        <Literal>Indicates the object or event which is identified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Identifies</IRI>
+        <Literal>Identifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Identifies</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Influences</IRI>
+        <Literal>Indicates that this class has an influence on the classes in its range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Influences</IRI>
+        <Literal>Influences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Influences</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Instructs</IRI>
+        <Literal>Indicates that the object is capable of instructing a computer to perform a specific task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Instructs</IRI>
+        <Literal>Instructs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Instructs</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Integrates</IRI>
+        <Literal>Indicates the object is capable of managing data integration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Integrates</IRI>
+        <Literal>Integrates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Integrates</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IntelligentProcessing</IRI>
+        <Literal>Intelligent processing is the analysis of sensor data by using a variety of intelligent computing technology, to achieve intelligent decision-making and control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntelligentProcessing</IRI>
+        <Literal>IntelligentProcessing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#IntelligentProcessing</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsConnectedThrough</IRI>
+        <Literal>Indicates that this object displays connectivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsConnectedThrough</IRI>
+        <Literal>IsConnectedThrough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#IsConnectedThrough</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsDynamic</IRI>
+        <Literal>Indicates that this object is capable of changing dynamically.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsDynamic</IRI>
+        <Literal>IsDynamic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#IsDynamic</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lineage</IRI>
+        <Literal>the path that a data attribute travels between systems, and the alterations made during that journey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lineage</IRI>
+        <Literal>Lineage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Lineage</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaintainsDescendency</IRI>
+        <Literal>Indicates that the object maintains lineage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaintainsDescendency</IRI>
+        <Literal>MaintainsDescendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#MaintainsDescendency</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manages</IRI>
+        <Literal>Indicates the object is capable of managing data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manages</IRI>
+        <Literal>Manages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Manages</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measurement</IRI>
+        <Literal xml:lang="en">Symbols representing measures of objects or events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Measurement</IRI>
+        <Literal xml:lang="en">Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Measurement</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measures</IRI>
+        <Literal>Indicates that the object is capable of measuring another object or event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Measures</IRI>
+        <Literal>Measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Measures</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metadata</IRI>
+        <Literal>a description of a data entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Metadata</IRI>
+        <Literal>Metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Metadata</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetadataManagement</IRI>
+        <Literal>Objects that create, control, integrate, access and analyze metadata repositories to allow for easier access.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MetadataManagement</IRI>
+        <Literal>MetadataManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#MetadataManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Models</IRI>
+        <Literal>Indicates that the object is cabaple of modelling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Models</IRI>
+        <Literal>Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Models</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonFunctionalRequirement</IRI>
+        <Literal>Clusters of behavioral requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NonFunctionalRequirement</IRI>
+        <Literal>NonFunctionalRequirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#NonFunctionalRequirement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organizes</IRI>
+        <Literal>Indicates that this object defines the rules for organizing the AMDI.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Organizes</IRI>
+        <Literal>Organizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Organizes</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Perceives</IRI>
+        <Literal>Indicates that the object is capable of perceiving the world and transforming the perception into data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Perceives</IRI>
+        <Literal>Perceives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Perceives</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Perception</IRI>
+        <Literal>includes hardware used for the acquisition of observations or measurements by using perception, acquisition and measurement technology such as RFID, two-dimensional code and sensors, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Perception</IRI>
+        <Literal>Perception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Perception</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalEnvironment</IRI>
+        <Literal>The sum of the tangible things in the area within which the AMDI occurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalEnvironment</IRI>
+        <Literal>PhysicalEnvironment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#PhysicalEnvironment</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalMetadata</IRI>
+        <Literal xml:lang="en">includes information about the physical
+storage of data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalMetadata</IRI>
+        <Literal xml:lang="en">PhysicalMetadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#PhysicalMetadata</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Planning</IRI>
+        <Literal>detailed proposal for doing or achieving something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Planning</IRI>
+        <Literal>Planning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Planning</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Plans</IRI>
+        <Literal>Indicates that the object is capable of planning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Plans</IRI>
+        <Literal>Plans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Plans</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Platform</IRI>
+        <Literal>A platform is a group of technologies that are used as a base upon which applications are developed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Platform</IRI>
+        <Literal>Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Platform</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PoliticalEnvironment</IRI>
+        <Literal>governing actions and artefacts which affect the operations of the AMDI.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PoliticalEnvironment</IRI>
+        <Literal>PoliticalEnvironment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#PoliticalEnvironment</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Presents</IRI>
+        <Literal>Indicates that the object is capable of presenting data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Presents</IRI>
+        <Literal>Presents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Presents</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Processes</IRI>
+        <Literal>Indicates that the object is capable of processing data for intelligent decision-making.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Processes</IRI>
+        <Literal>Processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Processes</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Read</IRI>
+        <Literal>Indicates that the object is capable of reading data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Read</IRI>
+        <Literal>Read</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Read</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReferenceAndMasterDataManagement</IRI>
+        <Literal>ensuring consistency with a ‘golden version’ of data values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ReferenceAndMasterDataManagement</IRI>
+        <Literal>ReferenceAndMasterDataManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#ReferenceAndMasterDataManagement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Registers</IRI>
+        <Literal>Indicates that the object is capable of registering data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Registers</IRI>
+        <Literal>Registers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Registers</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Registration</IRI>
+        <Literal xml:lang="en">Symbols representing measures or descriptions of objects or events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Registration</IRI>
+        <Literal xml:lang="en">Registration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Registration</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Regulates</IRI>
+        <Literal>Defines the actions required to comply to norms, policies, laws and regulations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Regulates</IRI>
+        <Literal>Regulates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Regulates</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Secures</IRI>
+        <Literal>Indicates that the object is capable of providing data security.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Secures</IRI>
+        <Literal>Secures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Secures</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SelfOrganization</IRI>
+        <Literal>the coordination mechanism whereby AMDIs are able to adjust and adapt themselves to both external and internal influences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SelfOrganization</IRI>
+        <Literal>SelfOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#SelfOrganization</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShareholderRequirement</IRI>
+        <Literal>clusters of IoT “use” in asset management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShareholderRequirement</IRI>
+        <Literal>ShareholderRequirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#ShareholderRequirement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Signals</IRI>
+        <Literal>Indicates that the object is capable of providing feedback.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Signals</IRI>
+        <Literal>Signals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">A set of instructions or programs instructing a computer to do specific tasks. Software is a generic term used to describe computer programs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Standard</IRI>
+        <Literal>Objects that provide requirements, specifications, guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services are fit for their purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Standard</IRI>
+        <Literal>Standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Standard</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Standardizes</IRI>
+        <Literal>Indicates that the object provides a standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Standardizes</IRI>
+        <Literal>Standardizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Standardizes</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Store</IRI>
+        <Literal>Indicates that the object is capable of storing data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Store</IRI>
+        <Literal>Store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Store</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Structures</IRI>
+        <Literal>Indicates that this object structures the process or organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Structures</IRI>
+        <Literal>Structures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Structures</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SystemID</IRI>
+        <Literal>System Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SystemID</IRI>
+        <Literal>SystemID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#SystemID</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SystemRequirement</IRI>
+        <Literal>Clusters of functional and non-functional requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SystemRequirement</IRI>
+        <Literal>SystemRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#SystemRequirement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Technology</IRI>
+        <Literal xml:lang="en">The collection of Information Technology (IT) artifacts, hardware and software, used in the production of data or services or in the accomplishment of objectives, such as data analysis or data management.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Technology</IRI>
+        <Literal xml:lang="en">Technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Technology</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transmission</IRI>
+        <Literal>includes ensuring that the objects have access to information networks and can realize reliable information interaction and sharing through communications networks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transmission</IRI>
+        <Literal>Transmission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Transmission</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transmits</IRI>
+        <Literal>Indicates that the object is capable of transmitting data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transmits</IRI>
+        <Literal>Transmits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Transmits</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Update</IRI>
+        <Literal>Indicates that the object is capable of updating data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Update</IRI>
+        <Literal>Update</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Update</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UserMetadata</IRI>
+        <Literal xml:lang="en">includes annotations that users may associate with data items or collections; such annotations can, for example, capture user preferences and usage history. Stores user attributes (such as user preferences) that do not impact a user&apos;s core functionality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UserMetadata</IRI>
+        <Literal xml:lang="en">UserMetadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#UserMetadata</IRI>
+        <Literal xml:lang="en">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Uses</IRI>
+        <Literal>Indicates that this object uses objects in its range for a particular purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Uses</IRI>
+        <Literal>Uses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#Uses</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Represents the Asset Management Data Infrastructure: the sum of all its elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
